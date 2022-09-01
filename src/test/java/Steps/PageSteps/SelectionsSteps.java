@@ -15,7 +15,7 @@ public class SelectionsSteps {
         new Helpers().isElementPresent(By.xpath("//*[contains(text(),'" + words + "')]"));
     }
 
-    @When("Выбор из первого выпадающего списка элемента {int} -> {string}")
+    @When("Выбор из выпадающего списка {int} элемента -> {string}")
     public void selectFromFirstDropDownList(int count, String option) {
         if(count == 1) {
             new WaitHelper().waitElementToBeClickable(firstSelection);
